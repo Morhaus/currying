@@ -1,4 +1,4 @@
-function add(a,b,c,d){d=add.bind(0,a,c);d.valueOf=function(){return a+(b|0)+(c|0)};return d}
+function add(a,b,c,d){d=add.bind(0,a,c);d.valueOf=function(){return b|0+a+(c|0)};return d}
 
 function test(a, b) {
   if (a == b) {
