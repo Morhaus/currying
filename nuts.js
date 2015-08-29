@@ -1,6 +1,4 @@
-function add() {
-  // TODO
-}
+function add(a,b,c,d){d=add.bind(null,a,c);d.valueOf=function(){return a+(b|0)+(c|0)};return d}
 
 function test(a, b) {
   if (a == b) {
