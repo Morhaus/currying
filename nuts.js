@@ -1,4 +1,4 @@
-function add(a,b){a=[].reduce.call(arguments,function(c,d){return c+d});b=add.bind(0,a);b.valueOf=a.valueOf.bind(a);return b}
+function add(){var a,b=arguments,c=0;for(a in b)c+=b[a];b=add.bind(0,c);b.valueOf=eval.bind(0,c);return b}
 
 function test(a, b) {
   if (a == b) {
